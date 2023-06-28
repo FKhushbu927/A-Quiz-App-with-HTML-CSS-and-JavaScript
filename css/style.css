@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans';
-    
+    /* font-family: 'Josefin Sans'; */  
 
 }
 
@@ -20,19 +19,29 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 48px;
 }
-.text{
+.text1{
     width: 80%;
     margin: auto;
+}
+.text1 h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.text1 p{
+    font-size: 14px;
+    padding-bottom: 10px;
+  
 }
 
 .img img{
     width: 100%;
-    height: 280px;
+    
     border-radius: 50px;
 }
 .myBtn{
     width: 60%;
-    margin-top: 86px;
+    margin-top: 55px;
     margin-left: 210px !important;
    
   
@@ -46,10 +55,221 @@ body{
     color: #fff;
     padding: 6px 25px;
     cursor: pointer;
-    border-radius: 57px 0px 51px 0px;
+    border-radius: 57px 0px 57px 0px;
     transition: 0.2s ease-in-out;
 }
 .myBtn button:hover{
     background-color: darkturquoise;
 
+}
+
+.rulesBox.activeInfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.rulesBox{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px; 
+    pointer-events: none;
+    opacity: 0;
+}
+.rulesTitle{
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: blueviolet;
+    border-bottom: 1px solid lightgrey;
+    
+}
+.rulesList{
+    width: 80%;
+    margin: auto;
+   padding-top: 20px;
+}
+ol li{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+.rulesButtons button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+    margin-top: 112px;
+}
+
+.rulesButtons .exitBtn {
+       border-radius: 0px 47px 0px 46px;
+       transition: 0.2s ease-in-out;
+}
+.rulesButtons .exitBtn:hover{
+    background-color: red;
+}
+
+.rulesButtons .next-btn{
+          border-radius: 57px 0px 46px 0px;
+          transition: 0.2s ease-in-out;
+          margin-left: 122px;
+}
+.rulesButtons .next-btn:hover{
+    background-color: mediumorchid;
+}
+.question-container .activeQuiz{
+      opacity: 1;
+      z-index: 5;
+      pointer-events: auto;
+      transform: translate(-50%, -50%) scale(1);
+}
+
+.question-container{
+    opacity: 0;
+    pointer-events: none;
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px; 
+}
+.question-header{
+    
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 20px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.question-header .title{
+        color: blueviolet;
+        font-weight: 600;
+        font-size: 15px;
+}
+.question-header .time-count{
+     color: #004085;
+     background-color: #cce5ff;
+     border: 1px solid #b8daff;
+     height: 35px;
+     width: 130px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* gap: 10px; */
+     
+     /* padding: 5px 10px; */
+     border-radius: 8px;
+    
+}
+.question-header .time-count .time-left{
+    /* border-right: 2px solid gray; */
+}
+.timer-in-second{
+   
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    height: 33px;
+    width: 45px;
+    color: #fff;
+    background-color: #343a40;
+    border: 1px solid #121313;
+    border-radius: 8px;
+    margin-left: 3px;
+    user-select: none;
+}
+
+.time-lines{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+.question-section{
+    padding: 25px 30px 20px 30px;
+}
+.question-section .text2{
+    font: 20px;
+    font-weight: 600;
+}
+.ansOptions{
+    padding: 20px 0px;
+    display: block;
+}
+.options{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+.total-que{
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.total-que p{
+
+    margin-top: 144px;
+}
+.question-footer{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nextQues {
+    font-size: 20px;
+    font-weight: 600;
+    background-color:blueviolet;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+    margin-top: 140px;
+}
+.nextQues:hover{
+    background-color: rgb(192, 142, 239);
 }

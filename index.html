@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +21,74 @@
           <div class="img">
                 <img src="images/quiz.png" alt="">
           </div>
-          <div class="text">
+          <div class="text1">
               <h3>Start Quize with fixed time</h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque veniam, 
-                dolor consequatur molestiae quibusdam </p>
+            </p>
                 <h3>Start Quize with fixed time</h3>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, recusandae.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur .</p>
           </div>
           <div class="myBtn">
-                 <button class="">Satrt</button>
-                
+                 <button>Start</button>    
           </div>
       </div><!--container-->
+      <!--rules container div-->
+     <div class="rulesBox">
+               <div class="rulesTitle">Some Rules of this Quiz</div>
+               
+                <div class="rulesList">
+                    <ol>
+                        <li>You will get <span>only 30s</span>for each question</li>
+                        <li>Once you select your answer, it can not be undone</li>
+                        <li>You can not select option once the time goes off</li>
+                        <li>You can not exit from the quiz while you are playing</li>
+                        <li>You get <span>one points</span> for each correct answer</li>
+                  </ol>
+                </div>
+               <div class="rulesButtons">
+                  <button class="exitBtn">Exit</button>
+                  <button class="next-btn">Next</button>
+               </div>
+      </div>
+ 
+      <div class="question-container">
+              <div class="question-header">
+                <div class="title">Start Exam</div>
+                <div class="time-count">
+                    <div class="time-left">Time Left</div>
+                    <div class="timer-in-second">30</div>
+                </div>
+              </div>
+              <div class="time-lines"></div>
+              <div class="question-section">
+                       <div><span class="text2">1. What does HTML stand for ?</span></div>
+                         <div class="ansOptions">
+                            <div class="options"><span>Hyper Text Mark up Language</span>
+                                <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </div>
+
+                            <div class="options"><span>Hyper text Multiple language</span>
+                                <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </div>
+                            <div class="options"><span>Hyper text Multiple language</span>
+                                <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </div>
+                            <div class="options"><span>Higher Level programming Language</span>
+                                <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </div>
+
+                         </div>
+
+              </div>
+              <div class="question-footer">
+                  <div class="total-que">
+                    <p>1 of 5 question</p>
+                  </div>
+                  <button class="nextQues">Next Ques</button>
+              </div>
+      </div> 
+     <script src="js/script.js"></script>
+
 </body>
 </html>
